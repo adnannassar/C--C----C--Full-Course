@@ -3,7 +3,8 @@
 int main()
 {
 
-    /*
+    int number1 = 10;
+    int number2 = 20;
     int resultOfAdd = number1 + number2;
     if (resultOfAdd > 0)
     {
@@ -19,32 +20,34 @@ int main()
     }
 
     int monthNumber;
-    printf("\n\n\n\nGeben Sie die Nummer für Monat ein:");
+    printf("\nMonat Switch:\nGeben Sie die Nummer für Monat ein: ");
     scanf("%d", &monthNumber);
     switch (monthNumber)
     {
     case 1:
-        printf("30\n");
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        printf("Monat %d hat 31 Tagen\n", monthNumber);
         break;
     case 2:
-        printf("28\n");
-        break;
-    case 3:
-        printf("30\n");
+        printf("Monat %d hat 28 Tagen\n", monthNumber);
         break;
     case 4:
-        printf("31\n");
+    case 6:
+    case 9:
+    case 11:
+        printf("Monat %d hat 30 Tagen\n", monthNumber);
         break;
     default:
-        printf("Bitte etwas gültiges eingeben\n");
+        printf("Bitte einen gültigen Monat eingeben\n");
     }
 
-
-
-*/
-
     // for, while, do_while
-    printf("For:      ");
+    printf("\nLoops:\nFor:      ");
     for (int x = 1; x <= 10; x++)
     {
         printf("%d ", x);
@@ -72,9 +75,16 @@ int main()
     int eingabeIstPosetiv = 1;
     while (eingabeIstPosetiv > 0)
     {
-        printf("\n\nGeben Sie etwas ein:");
+        printf("\nGeben Sie ein Posetive Zahl ein: ");
         scanf("%d", &eingabeIstPosetiv);
-        printf("Success!!!\n");
+        if (eingabeIstPosetiv > 0)
+        {
+            printf("Success!!!\n");
+        }
+        else
+        {
+            printf("Nigative Number is not allowed!\n");
+        }
     }
 
     return 1;
