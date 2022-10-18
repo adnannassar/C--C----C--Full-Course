@@ -45,7 +45,7 @@ void start()
 
 void greeting()
 {
-    printf("Welcome to Calculator:\n");
+    printf("Welcome to Calculator: \n");
 }
 
 int main()
