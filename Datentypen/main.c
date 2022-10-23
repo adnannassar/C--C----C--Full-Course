@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+
+
 int main()
 {
 
@@ -51,6 +53,9 @@ int main()
     int number2;
     printf("Bitee die zweite Zahl eingeben: ");
     scanf("%d", &number2);
+
+    double erg1 = 13.0 / 4 + 5 / 3 + 11 % 7;
+    printf("%f\n", erg1);
 
     return 1;
 }
