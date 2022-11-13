@@ -34,6 +34,9 @@ int member(int n)
 
 int main()
 {
+    Entry *myEntry;
+    myEntry->value = 10;
+    myEntry->status = FULL;
 
     return 1;
 }
