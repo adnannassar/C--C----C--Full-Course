@@ -3,7 +3,7 @@
 
 typedef enum STATUS 
 {
-   FULL,
+   FULL ,
    EMPTY,
    TO_BE_DELETED
 }Status ;
